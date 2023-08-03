@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+    --mainColor: #1A661A;
+    --mainColorLight: #5767aa;
+    --secondaryColor: #DB2B39;
+    --textColor: #eee;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+}
+
+header .login-btn {
+    /*background-color: #4CAF50; !* Green *!*/
+    background-color: white;
+    border: 2px solid #e7e7e7;
+    /*border: none;*/
+    /*color: white;*/
+    color: black;
+    padding: 12px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+header .sidebar-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    font-size: 1.8rem;
+}
+
+header h3 {
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1024px) {
+    header .responsive_sidebar {
+        transform: none;
+    }
+}
