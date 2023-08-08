@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Titillium Web", sans-serif;
+    height: 100%;
 }
 
 :root {
@@ -26,16 +27,18 @@ header {
 
 header .login-btn {
     background-color: white;
-    border: 2px solid #e7e7e7;
     color: black;
-    padding: 12px 35px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin-top: 16px;
     cursor: pointer;
-    border-radius: 25px;
+    border-radius: 15px;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    border: none;
 }
 
 header .sidebar-btn {
@@ -46,10 +49,6 @@ header .sidebar-btn {
     outline: none;
     color: var(--textColor);
     font-size: 1.8rem;
-}
-
-header h3 {
-    margin: 0 auto;
 }
 
 .sidebar {
@@ -90,9 +89,14 @@ header h3 {
     font-weight: bold;
 }
 
+.sidebar .login-btn {
+    height: 50px;
+}
+
 .sidebar .login-btn button {
     margin: 10px 55px;
     width: 250px;
+    height: 50px;
     padding: 15px;
     font-size: 16px;
     border: none;
@@ -118,6 +122,13 @@ header h3 {
     text-decoration: none;
     color: #78909C ;
     font-weight: bold;
+}
+
+section.main{
+    display: block;
+    max-width: 700px;
+    height: 100%;
+    background-color: blue;
 }
 
 
