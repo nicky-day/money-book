@@ -1,0 +1,6 @@
+.sidebar .show {
+    width: 4em;
+    height: 0.5em;
+    background-color: #61dafb;
+    border-radius: 0.5em;
+}

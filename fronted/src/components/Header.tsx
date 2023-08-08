@@ -11,18 +11,20 @@ function Header() {
     };
 
     return (
-        <header>
-            {/* Hamburger menu button */}
-            <button className="sidebar-btn" onClick={toggleSidebar}>
-                <FaBars/>
-            </button>
-            {/* Logo */}
-            <h3>Money Book</h3>
-            {/* Login Button */}
-            <button className="login-btn">로그인</button>
-            {/* Render the SideBar component */}
+        <>
+            <header>
+                {/* Hamburger menu button */}
+                <button className="sidebar-btn" onClick={toggleSidebar}>
+                    <FaBars/>
+                </button>
+                {/* Logo */}
+                <h3>Money Book</h3>
+                {/* Login Button */}
+                <button className="login-btn">로그인</button>
+                {/* Render the SideBar component */}
+            </header>
             {isSidebarOpen && <Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar}/>}
-        </header>
+        </>
     )
 }
 
