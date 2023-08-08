@@ -2,6 +2,7 @@ import React from "react";
 import '../styles/main.css';
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from '@mui/icons-material/Close';
+import {Link} from "react-router-dom";
 
 interface SideBarProps {
     isOpen: boolean;
@@ -21,8 +22,10 @@ const Sidebar: React.FC<SideBarProps> = ({isOpen, onClose}) => {
                 오늘의 TODO, 가계부, 일기를<br/>
                 기록해보세요:)
             </p>
-            <div className="signup-login-btn">
-                <button>회원가입 / 로그인</button>
+            <div className="login-btn">
+                <Link to="/account/signin">
+                    <button>회원가입 / 로그인</button>
+                </Link>
             </div>
             <nav>
                 <div className="sidebar-menu">

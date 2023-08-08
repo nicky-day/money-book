@@ -1,12 +1,19 @@
 import React from 'react';
 import Header from "./components/Header";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import SignIn from "./components/SignIn";
 
 function App() {
-  return (
-    <React.Fragment>
-      <Header/>
-    </React.Fragment>
-  );
+    return (
+        <React.Fragment>
+            <BrowserRouter>
+                <Header/>
+                <Routes>
+                    <Route path="/account/signin" element={<SignIn/>}></Route>
+                </Routes>
+            </BrowserRouter>
+        </React.Fragment>
+    );
 }
 
 export default App;
