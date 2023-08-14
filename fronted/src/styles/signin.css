@@ -41,13 +41,20 @@ section .text-input-area {
 
 section .text-input {
     height: 50px;
-    width: 100%;
+    width: 90%;
     /*margin-bottom: 5px;*/
     background-color: transparent;
     border: none;
     outline: none;
     padding-left: 16px;
     padding-right: 16px;
+}
+
+section .clear-btn {
+    background-color: #FFFFFF;
+    width: 10%;
+    border: none;
+    margin: 5px;
 }
 
 section .login-submit {
