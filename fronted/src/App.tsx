@@ -9,10 +9,11 @@ function App() {
         <React.Fragment>
             <BrowserRouter>
                 <Header/>
-                <Main/>
-                <Routes>
-                    <Route path="/account/signin" element={<SignIn/>}></Route>
-                </Routes>
+                <Main>
+                    <Routes>
+                        <Route path="/account/signin" element={<SignIn/>}></Route>
+                    </Routes>
+                </Main>
             </BrowserRouter>
         </React.Fragment>
     );

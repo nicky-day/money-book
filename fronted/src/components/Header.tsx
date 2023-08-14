@@ -19,7 +19,7 @@ function Header() {
                     <FaBars/>
                 </button>
                 {/* Logo */}
-                <div>Money Book</div>
+                <div className="logo">Money Book</div>
                 {/* Login Button */}
                 <Link to="/account/signin">
                     <button className="login-btn">로그인</button>
