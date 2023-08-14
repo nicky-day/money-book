@@ -1,0 +1,123 @@
+section.sign-in {
+    max-width: 700px;
+    max-height: 900px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+}
+
+section .app-gutter {
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 30px;
+}
+
+section .page-title {
+    height: 60px;
+    padding-bottom: 20px;
+}
+
+section .sign-in-form {
+    height: 250px;
+}
+
+section .sign-in-input {
+    height: 162px;
+    display: flex;
+    flex-direction: column;
+}
+
+section .text-input-area {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    -webkit-box-align: center;
+    /*height: 40%;*/
+    border-radius: 6px;
+    border: thin solid gray;
+    /*margin-bottom: 5px;*/
+}
+
+section .text-input {
+    height: 50px;
+    width: 90%;
+    /*margin-bottom: 5px;*/
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+section .clear-btn {
+    background-color: #FFFFFF;
+    width: 10%;
+    border: none;
+    margin: 5px;
+}
+
+section .login-submit {
+    width: 100%;
+    height: 56px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+section .password-reset {
+    float: right;
+    height: 100px;
+}
+
+section .start-with-sns {
+    height: 270px;
+}
+
+section .start-with-naver-btn {
+    width: 100%;
+    height: 56px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    background-color: #1EC800;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+section .start-with-facebook-btn {
+    width: 100%;
+    height: 56px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    background-color: #3B5998;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+section .sign-up-btn {
+    width: 100%;
+    height: 56px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border-width: 1px;
+}

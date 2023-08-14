@@ -2,6 +2,7 @@ import React, {RefObject, useState} from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa'
 import "../styles/main.css"
 import Sidebar from "./Sidebar";
+import {Link} from "react-router-dom";
 
 function Header() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -18,10 +19,11 @@ function Header() {
                     <FaBars/>
                 </button>
                 {/* Logo */}
-                <h3>Money Book</h3>
+                <div className="logo">Money Book</div>
                 {/* Login Button */}
-                <button className="login-btn">로그인</button>
-                {/* Render the SideBar component */}
+                <Link to="/account/signin">
+                    <button className="login-btn">로그인</button>
+                </Link>
             </header>
             {isSidebarOpen && <Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar}/>}
         </>
