@@ -1,9 +1,15 @@
 import React, {useState} from "react"
 import '../styles/signin.css';
+import {useNavigate} from "react-router-dom";
 
 const SignIn = () => {
     // const [email, setEmail] = useState("");
     // const [password, setPassword] = useState("");
+
+    const navigate = useNavigate();
+    const navigateToSignUp = () => {
+        navigate("/account/signup")
+    }
 
     return (
         <section className="sign-in">
@@ -60,7 +66,7 @@ const SignIn = () => {
                         <button type="submit" className="start-with-facebook-btn">페이스북으로 시작하기</button>
                     </div>
                     <div>
-                        <button className="sign-up-btn">이메일로 회원가입</button>
+                        <button className="sign-up-btn" onClick={navigateToSignUp}>이메일로 회원가입</button>
                     </div>
                 </div>
             </div>
